@@ -24,7 +24,20 @@ namespace Dz05
         this.adg = adg;
         this.ArrMark = ArrMark;
     }
+    //метод возвращать Получить оценку
+        public void GetMark()
+        {
+             for (int i = 0; i < ArrMark.Length; i++)
+            {
+                System.Console.Write("Element({0}): ", i);
 
+                for (int j = 0; j < ArrMark[i].Length; j++)
+                {
+                    System.Console.Write("{0}{1}", ArrMark[i][j], j == (ArrMark[i].Length - 1) ? "" : " ");
+                }
+                System.Console.WriteLine();
+            }
+        }
     //метод
         public void Print()
         {
@@ -32,8 +45,8 @@ namespace Dz05
                 $"\nФамилия:{ LastName}" +
                 $"\nОтчество:{MiddlName}" +
                 $"\nГруппа:{Group}" +
-                $"\nВозраст{adg}" +
-                $"\nОценки{ArrMark}\n"
+                $"\nВозраст:{adg}" +
+                $"\nОценки: {ArrMark}"
             );
         }
         //метод
@@ -42,11 +55,7 @@ namespace Dz05
             Console.WriteLine(FirstName);
         }
     
-        //метод возвращать Получить оценку
-        public int GetMark()
-        {
-            return new Random().Next(1, 12);
-        }
+        
     }
     
 
