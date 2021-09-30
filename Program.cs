@@ -49,7 +49,7 @@ namespace Dz05
 
             Student student1 = new Student("Петя", "Петров", "Петрович", "PO2", 18, arrMark);
             student1.Print();
-            Student student2 = new Student("Vasya", "Vasiliev", "Vasilevich", "PV2", 18, arrMark);
+            Student student2 = new Student("Vasya", "Vasiliev", "Vasilevich", "PV2", 18, arryMark);
             student1.Print();
 
             // Keep the console window open in debug mode.
