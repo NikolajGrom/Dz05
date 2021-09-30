@@ -24,8 +24,13 @@ namespace Dz05
                 }
                 System.Console.WriteLine();
             }
+
+            Student student1 = new Student("Петя", "Петров", "Петрович", "2", 18, arrMark);
+            student1.Print();
+
             // Keep the console window open in debug mode.
             System.Console.WriteLine("Press any key to exit.");
+
             System.Console.ReadKey();
 
 
