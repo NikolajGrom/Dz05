@@ -7,6 +7,7 @@ namespace Dz05
         static void Main(string[] args)
         {
             Console.WriteLine("--- Nobel University! ---\n");
+             Console.WriteLine("------------- Array Mark1  -------------\n");
             int[][] arrMark = new int[2][];
 
             // Initialize the elements.
@@ -24,6 +25,9 @@ namespace Dz05
                 }
                 System.Console.WriteLine();
             }
+
+            Console.WriteLine("------------- Array Mark2 -------------\n");
+
             int[][] arryMark = new int[2][];
 
             // Initialize the elements.
